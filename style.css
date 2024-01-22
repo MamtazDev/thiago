@@ -8,3 +8,7 @@ body {
     font-family: 'Lato', sans-serif !important;
 
 }
+
+.bg-instagram {
+    background: var(--instagram, linear-gradient(239deg, #C913B9 -2.57%, #F9373F 44.58%, #FECD00 91.55%));
+}

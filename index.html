@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        login: ' 0px 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                        news: '0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10)'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10); -->
+
+</head>
+
+
+<body>
+
+
+    <main>
+
+        <section class="relative">
+            <header>
+                <div class="absolute inset-0 z-0 h-[500px]">
+                    <video class="w-full h-full object-cover" autoplay muted>
+                        <source src="./assets/V.2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="z-30 flex items-center justify-center relative">
+                    <img class="z-40" src="./assets/logo.png" alt="Logo">
+                </div>
+            </header>
+            <div class="container m-auto z-[20] absolute top-[70%] left-[10%]">
+
+                <section class="grid grid-cols-12 gap-[24px]">
+                    <div class="col-span-3">
+                        <div
+                            class="p-[24px] relative login_wrapper bg-[url('./assets/login-frame.svg')] bg-[#E0E7FF] shadow-login rounded-[24px]">
+                            <div class="absolute top-[-115px] left-[110px] ">
+                                <img src="./assets/loginimg.png" alt="">
+                            </div>
+                            <div>
+                                <input class="w-full rounded-[4px] px-[12px] py-[8px] bg-[#fff] mb-[12px] " type="email"
+                                    placeholder="User Name or Email"> <br>
+                                <input class="w-full rounded-[4px] px-[12px] py-[8px] bg-[#fff] mb-[12px] "
+                                    type="password" placeholder="Password">
+                                <button
+                                    class="mt-[20px] mb-[24px] bg-[#4F46E5] rounded-[12px] w-full py-[12px] text-[#FFF] text-base font-semibold font-lato  ">Login</button>
+                                <div class="text-center">
+                                    <p class="text-[#9CA3AF] tex-sm font-medium mb-[20px]">OR</p>
+                                </div>
+                                <div class="mb-[20px]">
+                                    <button
+                                        class="py-[12px] text-base font-medium bg-[#2563EB] rounded-[12px] w-full flex items-center justify-center gap-[10px]"><img
+                                            src="./assets/facebook.png" alt="facebook"> <span
+                                            class="text-base font-medium text-white leading-[24px]">Login with
+                                            Facebook</span></button>
+                                    <button
+                                        class="py-[12px] text-base font-medium bg-[#DC2626] rounded-[12px] w-full flex items-center justify-center gap-[10px] mt-[12px]"><img
+                                            src="./assets/google.png" alt="facebook"> <span
+                                            class="text-base font-medium text-white leading-[24px]">Login with
+                                            Google</span></button>
+                                </div>
+
+                                <div class="flex justify-between">
+                                    <p class="text-[#64748B]  ">Forget Password?</p>
+                                    <a href="" class="text-[#4F46E5]  text-sm font-semibold ">Create Account</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-9 relative">
+
+                        <div class="absolute right-[-70px]  ">
+                            <img src="./assets/bannerdolimg.png" alt="">
+                        </div>
+                        <img src="./assets/banner.png" alt="">
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="bg-[url('./assets/shadow.png')] absolute z-40 h-[200px]">
+
+            </div>
+        </section>
+
+        <!-- News & Article section start -->
+        <section class="mt-[410px]">
+            <div class="container m-auto">
+                <div class="grid grid-cols-12 gap-[24px]">
+                    <div class="lg:col-span-3 col-span-12">
+                        <div
+                            class="p-[24px] relative login_wrapper bg-[url('./assets/login-frame.svg')] bg-[#E0E7FF] shadow-login rounded-[24px]">
+
+                            <div class="absolute left-[-110px]">
+                                <img src="/assets/postdolimg.png" alt="">
+                            </div>
+
+                            <div
+                                class="flex justify-between items-center px-[8px] py-[10px] rounded-tl-[16px] rounded-tr-[16px] rounded-br-0 rounded-bl-0 bg-white">
+                                <div class="flex  items-center gap-[6px] ">
+                                    <img src="./assets/newsProfile.png" alt="newsProfile">
+                                    <div class="">
+                                        <h5 class="text-[#374151] text-[12px]  font-bold  leading-[16px] ">Ruffles</h5>
+                                        <p class=" text-[12px] font-normal text-[#64748] mt-[2px] ">Sponsored</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="./assets/dots.png" alt="dots">
+                                </div>
+                            </div>
+                            <div class="w-full relative">
+                                <img class="w-full" src="./assets/post.png" alt="post">
+
+                                <div class="absolute bottom-[6px] left-[12px] ">
+                                    <img src="/assets/Tags.svg" alt="Tags">
+                                </div>
+                            </div>
+                            <div
+                                class="py-[12px] px-[8px]  rounded-bl-[16px] rounded-br-[16px] bg-white flex justify-between items-center ">
+                                <div class="flex items-center gap-[8px]">
+                                    <img src="/assets/love.png" alt="love">
+                                    <img src="/assets/chat.png" alt="chat">
+                                    <img src="/assets/send.png" alt="send">
+                                </div>
+                                <div>
+                                    <img src="/assets/bookmark.png" alt="bookmark">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="lg:col-span-6 col-span-12 rounded-[24px] bg-[#E0E7FF] bg-[url('./assets/login-frame.svg')] p-[24px]">
+                        <div class="py-[13px] bg-[#4F46E5] text-center  rounded-tl-[24px] mb-[28px] rounded-tr-[24px] ">
+                            <h3 class="text-white  text-2xl  font-bold leading-[32px] ">News & Article</h3>
+                        </div>
+                        <!-- news  -->
+                        <div class="flex  justify-between items-center p-[12px] bg-white rounded-[8px] mb-[12px] ">
+                            <div class="flex items-center  gap-[16px]">
+                                <div class="bg-black w-[59px] text-white text-center rounded-[13px] ">
+                                    News
+                                </div>
+                                <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in adipiscing
+                                    integer
+                                    sagittis tristique sed congue.Scelerisque.</p>
+                            </div>
+                            <div class="text-end">
+                                <p class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
+                                    01-09-2024</p>
+                            </div>
+                        </div>
+
+                        <div class="flex  justify-between items-center p-[12px] bg-white rounded-[8px] mb-[12px] ">
+                            <div class="flex items-center  gap-[16px]">
+                                <div class="bg-[#16A34A] w-[59px] text-white text-center rounded-[13px] ">
+                                    Article
+                                </div>
+                                <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in adipiscing
+                                    integer
+                                    sagittis tristique sed congue.</p>
+                            </div>
+                            <div class="text-end">
+                                <p class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
+                                    01-09-2024</p>
+                            </div>
+                        </div>
+                        <div class="flex  justify-between items-center p-[12px] bg-white rounded-[8px] mb-[12px] ">
+                            <div class="flex items-center  gap-[16px]">
+                                <div class="bg-[#16A34A] w-[59px] text-white text-center rounded-[13px] ">
+                                    Article
+                                </div>
+                                <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in adipiscing
+                                    integer
+                                    sagittis tristique sed congue.</p>
+                            </div>
+                            <div class="text-end">
+                                <p class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
+                                    01-09-2024</p>
+                            </div>
+                        </div>
+                        <div class="flex  justify-between items-center p-[12px] bg-white rounded-[8px] mb-[12px] ">
+                            <div class="flex items-center  gap-[16px]">
+                                <div class="bg-black w-[59px] text-white text-center rounded-[13px] ">
+                                    News
+                                </div>
+                                <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in adipiscing
+                                    integer
+                                    sagittis tristique sed congue.Scelerisque.</p>
+                            </div>
+                            <div class="text-end">
+                                <p class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
+                                    01-09-2024</p>
+                            </div>
+                        </div>
+                        <div class="flex  justify-between items-center p-[12px] bg-white rounded-[8px] mb-[12px] ">
+                            <div class="flex items-center  gap-[16px]">
+                                <div class="bg-black w-[59px] text-white text-center rounded-[13px] ">
+                                    News
+                                </div>
+                                <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in adipiscing
+                                    integer
+                                    sagittis tristique sed congue.Scelerisque.</p>
+                            </div>
+                            <div class="text-end">
+                                <p class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
+                                    01-09-2024</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

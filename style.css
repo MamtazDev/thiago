@@ -14,6 +14,39 @@ body {
 }
 
 
-.input_bg{
+.input_bg {
     background-color: rgba(255, 255, 255, 0.60);
 }
+
+.img-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/* Other styles for your container */
+/* .absolute {
+    position: absolute;
+    right: -70px;
+} */

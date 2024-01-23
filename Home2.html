@@ -61,39 +61,41 @@
                             <div class="absolute top-[-115px] left-[110px] ">
                                 <img src="./assets/loginimg.png" alt="">
                             </div>
-                            <div>
-                                <input class="w-full rounded-[4px] px-[12px] py-[8px] bg-[#fff] mb-[12px] " type="email"
-                                    placeholder="User Name or Email"> <br>
-                                <input class="w-full rounded-[4px] px-[12px] py-[8px] bg-[#fff] mb-[12px] "
-                                    type="password" placeholder="Password">
-                                <button
-                                    class="mt-[20px] mb-[24px] bg-[#4F46E5] rounded-[12px] w-full py-[12px] text-[#FFF] text-base font-semibold font-lato  ">Login</button>
-                                <div class="text-center">
-                                    <p class="text-[#9CA3AF] tex-sm font-medium mb-[20px]">OR</p>
-                                </div>
-                                <div class="mb-[20px]">
-                                    <button
-                                        class="py-[12px] text-base font-medium bg-[#2563EB] rounded-[12px] w-full flex items-center justify-center gap-[10px]"><img
-                                            src="./assets/facebook.png" alt="facebook"> <span
-                                            class="text-base font-medium text-white leading-[24px]">Login with
-                                            Facebook</span></button>
-                                    <button
-                                        class="py-[12px] text-base font-medium bg-[#DC2626] rounded-[12px] w-full flex items-center justify-center gap-[10px] mt-[12px]"><img
-                                            src="./assets/google.png" alt="facebook"> <span
-                                            class="text-base font-medium text-white leading-[24px]">Login with
-                                            Google</span></button>
+
+                            <div class="flex  flex-col  justify-center m-auto  ">
+                                <div class="m-auto mt-[9px] mb-[20px]">
+                                    <img src="/assets/profile.png" alt="">
                                 </div>
 
-                                <div class="flex justify-between">
-                                    <p class="text-[#64748B]  ">Forget Password?</p>
-
-                                    <!-- create account modal -->
-                                    <button type="button" class="text-[#4F46E5]  text-sm font-semibold "
-                                        data-modal-target="default-modal" data-modal-toggle="default-modal">Create
-                                        Account</button>
-
+                                <div class="text-center ">
+                                    <h5 class=" text-lg  text-[#334155] font-lato font-bold  ">#Username001</h5>
+                                    <p class="text-[#4F46E5] text-sm font-lato mt-[8px] font-normal ">yourname@gmail.com
+                                    </p>
+                                    <button
+                                        class="py-[12px] px-[54px] rounded-[12px] bg-[#4F46E5] mb-[24px] text-white font-lato text-base mt-[23px] ">Edit
+                                        Profile</button>
+                                </div>
+                                <div>
+                                    <div
+                                        class="bg-white mb-[12px] rounded-[8px]  p-[12px] flex items-center justify-between ">
+                                        <div class="flex items-center gap-[8px] ">
+                                            <img src="/assets/fb1.png" alt="facebook">
+                                            <p class="text-[#334155]  font-lato text-base font-medium">Linked with
+                                                Facebook</p>
+                                        </div>
+                                        <a href="#" class="text-sm text-[#4F46E5] ">Unlink</a>
+                                    </div>
+                                    <div class="bg-white rounded-[8px]  p-[12px] flex items-center justify-between ">
+                                        <div class="flex items-center gap-[8px] ">
+                                            <img src="/assets/redgoogle.png" alt="facebook">
+                                            <p class="text-[#334155]  font-lato text-base font-medium">Linked with
+                                                Google</p>
+                                        </div>
+                                        <a href="#" class="text-sm text-[#4F46E5] ">Link</a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -499,94 +501,68 @@
                 </div>
             </div>
         </section>
+    </main>
 
 
-        <!-- create account modal start -->
 
-        <!-- Main modal -->
-        <div id="default-modal" tabindex="-1" aria-hidden="true"
-            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative  w-full max-w-2xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-[#E0E7FF] rounded-[8px]  py-[39px] px-[32px]">
-                    <div class="text-right">
-                        <button type="button"
-                            class="text-gray-400  text-sm w-8 h-8 ms-auto inline-flex justify-center items-center absolute right-[24px] top-[24px] "
-                            data-modal-hide="default-modal">
-                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 14 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                            </svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-[30px] mb-[24px] text-[#334155]  font-lato font-bold text-center  ">
-                            Create Account
-                        </h3>
+    <!-- Modal toggle -->
+    <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+        class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="button">
+        Toggle modal
+    </button>
 
-                    </div>
-                    <!-- Modal body -->
-                    <div class="flex flex-col gap-[12px] mb-[32px]">
-                        <input type="text" class="border border-[#CBD5E1] rounded-[8px]  w-full "
-                            placeholder="User Name">
-                        <input type="email" class="border border-[#CBD5E1] rounded-[8px]  w-full " placeholder="Email">
-                        <input type="password" class="border border-[#CBD5E1] rounded-[8px]  w-full "
-                            placeholder="password">
-                    </div>
-
-                    <div class="w-full mb-[32px]">
-                        <button
-                            class="w-full text-white font-lato font-semibold text-base py-[12px]   rounded-[4px] bg-[#4F46E5] ">
-                            Login
-                        </button>
-                    </div>
-                    <div class="text-center text-sm font-medium text-[#6B7280] mb-[32px] ">
-                        OR
-                    </div>
-                    <div>
-                        <div class="grid grid-cols-12 items-center gap-[12px]">
-                            <div class="lg:col-span-6 col-span-12">
-                                <button
-                                    class="py-[12px] text-base font-medium bg-[#2563EB] rounded-[4px] w-full flex items-center justify-center gap-[10px]"><img
-                                        src="./assets/facebook.png" alt="facebook"> <span
-                                        class="text-base font-medium text-white leading-[24px]">Login with
-                                        Facebook</span></button>
-                            </div>
-                            <div class="lg:col-span-6 col-span-12">
-                                <button
-                                    class="py-[12px] text-base font-medium bg-[#DC2626] rounded-[4px] w-full flex items-center justify-center gap-[10px]"><img
-                                        src="./assets/google.png" alt="facebook"> <span
-                                        class="text-base font-medium text-white leading-[24px]">Login with
-                                        Google</span></button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- Modal footer -->
-
+    <!-- Main modal -->
+    <div id="default-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Terms of Service
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="default-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        With less than a month to go before the European Union enacts new consumer privacy laws for its
+                        citizens, companies around the world are updating their terms of service agreements to comply.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25
+                        and is meant to ensure a common set of data rights in the European Union. It requires
+                        organizations to notify users as soon as possible of high-risk data breaches that could
+                        personally affect them.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="default-modal" type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+                        accept</button>
+                    <button data-modal-hide="default-modal" type="button"
+                        class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
                 </div>
             </div>
         </div>
-
-
-
-        <!-- create account modal end -->
-
-
-
-
-
-
-
-
-
-    </main>
+    </div>
 
     <!-- flowbite link -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
 
 </body>
 

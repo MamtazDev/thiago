@@ -59,7 +59,7 @@
                         <div
                             class="p-[24px] relative login_wrapper bg-[url('./assets/login-frame.svg')] bg-[#E0E7FF] shadow-login rounded-[24px]">
                             <div class="absolute top-[-115px] left-[110px] ">
-                                <img src="./assets/loginimg.png" alt="">
+                                <img class="img-move" src="./assets/loginimg.png" alt="">
                             </div>
 
                             <div class="flex  flex-col  justify-center m-auto  ">
@@ -103,7 +103,7 @@
                     <div class="col-span-9 relative">
 
                         <div class="absolute right-[-70px]  ">
-                            <img src="./assets/bannerdolimg.png" alt="">
+                            <img class="img-move" src="./assets/bannerdolimg.png" alt="">
                         </div>
                         <img src="./assets/banner.png" alt="">
                     </div>
@@ -125,7 +125,7 @@
                             class="p-[24px]  relative login_wrapper bg-[url('./assets/login-frame.svg')] bg-[#E0E7FF] shadow-login rounded-[24px]">
 
                             <div class="absolute left-[-110px]">
-                                <img src="/assets/postdolimg.png" alt="">
+                                <img class="img-move" src="/assets/postdolimg.png" alt="">
                             </div>
 
                             <div
@@ -192,16 +192,21 @@
                                         Discord</span></button>
 
                             </div>
-                            <div class="flex justify-end "> <img src="./assets/socialdol.png" alt=""></div>
+                            <div class="flex justify-end "> <img class="img-move" src="./assets/socialdol.png" alt="">
+                            </div>
                         </div>
                         <!-- Our Social Sites end -->
 
                     </div>
 
                     <!-- news section start col-6 -->
-                    <div class="lg:col-span-6 col-span-12 ">
+                    <div class="lg:col-span-6 col-span-12">
                         <div
-                            class="rounded-[24px] bg-[#E0E7FF]  shadow-news  bg-[url('./assets/login-frame.svg')] mb-[28px]">
+                            class="rounded-[24px] bg-[#E0E7FF]  shadow-news  bg-[url('./assets/login-frame.svg')] mb-[28px] relative">
+                            <div class="absolute ">
+                                <img class="img-move" src="/assets/newsarticledol.png" alt="">
+                            </div>
+
                             <div
                                 class="py-[13px]  bg-[#4F46E5] text-center  rounded-tl-[24px] mb-[28px] rounded-tr-[24px] ">
                                 <h3 class="text-white  text-2xl  font-bold leading-[32px] ">News & Article</h3>
@@ -298,7 +303,13 @@
                         </div>
 
                         <!-- Rare Items start -->
-                        <div class="rounded-[24px] bg-[#E0E7FF]  shadow-news  bg-[url('./assets/login-frame.svg')] ">
+                        <div
+                            class="relative rounded-[24px] bg-[#E0E7FF]  shadow-news  bg-[url('./assets/login-frame.svg')] ">
+
+
+                            <div class="absolute right-[-28px] z-10 ">
+                                <img class="img-move" src="/assets/reredol.png" alt="">
+                            </div>
                             <div
                                 class="py-[13px] bg-[#4F46E5] text-center  rounded-tl-[24px] mb-[28px] rounded-tr-[24px] ">
                                 <h3 class="text-white  text-2xl  font-bold leading-[32px] ">Rare Items</h3>
@@ -410,19 +421,18 @@
                     <div class="lg:col-span-3 col-span-12 ">
                         <div
                             class=" relative  mb-[24px]  shadow-news  rounded-[24px] bg-[#E0E7FF] bg-[url('./assets/login-frame.svg')] ">
-
-                            <div class="absolute top-0  right-0 ">
-                                <img src="/assets/serverdol.png " alt="">
+                            <div class="absolute top-[-23px]  right-[-62px] ">
+                                <img class="img-move" src="/assets/serverdol.png " alt="">
                             </div>
                             <div
                                 class="py-[13px] bg-[#4F46E5] text-center  rounded-tl-[24px] mb-[28px] rounded-tr-[24px] ">
-                                <h3 class="text-white  text-2xl  font-bold leading-[32px] ">Server List</h3>
+                                <h3 class="text-white  text-2xl  font-bold leading-[32px]">Server List</h3>
                             </div>
                             <!-- input field -->
                             <div class="px-[24px] pb-[24px]">
                                 <div class="relative mb-[16px]">
                                     <input
-                                        class="w-full ps-[40px] text-sm font-normal  text-[#94A3B8] py-[12px] pe-[12px] rounded-[22px]  "
+                                        class="w-full ps-[40px] text-sm font-normal border-0  text-[#94A3B8] py-[12px] pe-[12px] rounded-[22px]  "
                                         type="text" placeholder="Search here">
                                     <div class="absolute top-[12px]  left-[12px] ">
                                         <img src="/assets/search.png" alt="">
@@ -490,7 +500,7 @@
                                         Download APK Version</span></button>
                             </div>
                             <div class="absolute right-[-66px] bottom-[-30px]">
-                                <img src="/assets/downloaddol.png" alt="">
+                                <img class="img-move" src="/assets/downloaddol.png" alt="">
                             </div>
                         </div>
                         <!--DOWNLOAD  Now SECTION END  -->

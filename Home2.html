@@ -34,8 +34,7 @@
 
 <body>
     <main class="mb-[120px]">
-
-        <section class="relative">
+        <!-- <section class="relative">
             <header>
                 <div class=" h-[0]">
                     <img class="w-full" src="./assets/V.3.gif" alt="">
@@ -46,7 +45,7 @@
             </header>
             <div class="container m-auto z-[20] absolute top-[70%] left-[10%]">
                 <section class="grid grid-cols-12 gap-[24px]">
-                    <div class="col-span-3">
+                    <div class="lg:col-span-3 col-span-12">
                         <div
                             class="p-[24px] relative login_wrapper bg-[url('./assets/login-frame.svg')] bg-[#E0E7FF] shadow-login rounded-[24px]">
                             <div class="absolute top-[-115px] left-[110px] ">
@@ -91,8 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="col-span-9 relative">
-
+                    <div class="lg:col-span-9 col-span-12 relative">
                         <div class="absolute right-[-70px]  ">
                             <img class="img-move" src="./assets/bannerdolimg.png" alt="">
                         </div>
@@ -102,13 +100,77 @@
                 </section>
             </div>
 
-            <div class="bg-[url('./assets/shadow.png')] absolute z-40 h-[200px]">
+        </section> -->
+        <section class="relative">
+            <header>
+                <div class=" h-[0]">
+                    <img class="w-full" src="./assets/V.3.gif" alt="">
+                </div>
+                <div class="z-30 flex items-center justify-center relative ">
+                    <img class="z-40 " src="./assets/logo.png" alt="Logo">
+                </div>
+            </header>
+            <div class="container mt-[100px] m-auto z-[20] top-[70%] left-[10%]">
+                <section class="grid grid-cols-12 gap-[24px]">
+                    <div class="lg:col-span-3 col-span-12">
+                        <div
+                            class="p-[24px] relative login_wrapper bg-[url('./assets/login-frame.svg')] bg-[#E0E7FF] shadow-login rounded-[24px]">
+                            <div class="absolute top-[-115px] left-[110px] ">
+                                <img class="img-move" src="./assets/loginimg.png" alt="">
+                            </div>
 
+                            <div class="flex  flex-col  justify-center m-auto  ">
+                                <div class="m-auto mt-[9px] mb-[20px]">
+                                    <img src="/assets/profile.png" alt="">
+                                </div>
+
+                                <div class="text-center ">
+                                    <h5 class=" text-lg  text-[#334155] font-lato font-bold  ">#Username001</h5>
+                                    <p class="text-[#4F46E5] text-sm font-lato mt-[8px] font-normal ">yourname@gmail.com
+                                    </p>
+                                    <button type="button" data-modal-target="default-modal"
+                                        data-modal-toggle="default-modal"
+                                        class="py-[12px] px-[54px] rounded-[12px] bg-[#4F46E5] mb-[24px] text-white font-lato text-base mt-[23px] ">Edit
+                                        Profile</button>
+                                </div>
+                                <div>
+                                    <div
+                                        class="bg-white mb-[12px] rounded-[8px]  p-[12px] flex items-center justify-between ">
+                                        <div class="flex items-center gap-[8px] ">
+                                            <img src="/assets/fb1.png" alt="facebook">
+                                            <p class="text-[#334155]  font-lato text-base font-medium">Linked with
+                                                Facebook</p>
+                                        </div>
+                                        <a href="#" class="text-sm text-[#4F46E5] ">Unlink</a>
+                                    </div>
+                                    <div class="bg-white rounded-[8px]  p-[12px] flex items-center justify-between ">
+                                        <div class="flex items-center gap-[8px] ">
+                                            <img src="/assets/redgoogle.png" alt="facebook">
+                                            <p class="text-[#334155]  font-lato text-base font-medium">Linked with
+                                                Google</p>
+                                        </div>
+                                        <a href="#" class="text-sm text-[#4F46E5] ">Link</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="lg:col-span-9 col-span-12 relative">
+                        <div class="absolute right-[-70px]  ">
+                            <img class="img-move" src="./assets/bannerdolimg.png" alt="">
+                        </div>
+                        <img class="h-[433px]" src="./assets/banner.png" alt="">
+                    </div>
+
+                </section>
             </div>
         </section>
 
         <!-- News & Article section start -->
-        <section class="mt-[410px]">
+        <section class="mt-[45px]">
             <div class="container m-auto">
                 <div class="grid grid-cols-12 gap-[24px]">
                     <div class="lg:col-span-3 col-span-12">
@@ -156,11 +218,11 @@
                         <div
                             class="lg:col-span-3 col-span-12 mb-[24px] rounded-[24px]  shadow-news  bg-[#E0E7FF] mt-[24px] bg-[url('./assets/login-frame.svg')] ">
                             <div
-                                class="py-[13px] bg-[#4F46E5] text-center  rounded-tl-[24px] mb-[28px] rounded-tr-[24px] ">
+                                class="py-[13px] bg-[#4F46E5] text-center  rounded-tl-[24px] lg:mb-[28px] rounded-tr-[24px] ">
                                 <h3 class="text-white  text-2xl  font-bold leading-[32px]">Our Social Sites</h3>
                             </div>
                             <div
-                                class=" flex flex-col gap-[16px] p-[24px] pb-0 rounded-[24px] bg-[#E0E7FF] bg-[url('./assets/login-frame.svg')]">
+                                class=" flex flex-col gap-[16px] p-[24px] lg:pb-0  pb-[24px] rounded-[24px] bg-[#E0E7FF] bg-[url('./assets/login-frame.svg')]">
                                 <button
                                     class="py-[12px] text-base font-medium bg-[#2563EB]  rounded-[12px] w-full flex items-center justify-center gap-[10px]"><img
                                         src="./assets/facebook.png" alt="facebook"> <span
@@ -291,57 +353,6 @@
                                                 01-09-2024</p>
                                         </div>
                                     </div>
-                                    <!-- <div
-                                    class="flex  justify-between items-center p-[12px] h-[50px] bg-white rounded-[8px] mb-[12px] ">
-                                    <div class="flex items-center  gap-[16px]">
-                                        <div class="bg-[#16A34A]  text-white text-center rounded-[13px] ">
-                                            Article
-                                        </div>
-                                        <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in
-                                            adipiscing
-                                            integer
-                                            sagittis tristique sed congue.</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p
-                                            class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
-                                            01-09-2024</p>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex  justify-between items-center p-[12px] h-[50px] bg-white rounded-[8px] mb-[12px] ">
-                                    <div class="flex items-center  gap-[16px]">
-                                        <div class="bg-black  text-white text-center rounded-[13px] ">
-                                            News
-                                        </div>
-                                        <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in
-                                            adipiscing
-                                            integer
-                                            sagittis tristique sed congue.Scelerisque.</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p
-                                            class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
-                                            01-09-2024</p>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex  justify-between items-center p-[12px] h-[50px] bg-white rounded-[8px] mb-[16px] ">
-                                    <div class="flex items-center  gap-[16px]">
-                                        <div class="bg-black w-[59px] text-white text-center rounded-[13px] ">
-                                            News
-                                        </div>
-                                        <p class="text-[#334155] text-base font-medium leading-[24px]  ">Sit in
-                                            adipiscing
-                                            integer
-                                            sagittis tristique sed congue.Scelerisque.</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <p
-                                            class="#4F46E5  text-sm font-normal leading-[20px] text-[#4F46E5] text-right">
-                                            01-09-2024</p>
-                                    </div>
-                                </div> -->
 
                                 </div>
                                 <!-- pagination -->
@@ -397,14 +408,11 @@
                                         </ul>
                                     </nav>
                                 </div>
-
                             </div>
                         </div>
                         <!-- Rare Items start -->
                         <div
                             class="relative rounded-[24px] bg-[#E0E7FF]  shadow-news  bg-[url('./assets/login-frame.svg')] ">
-
-
                             <div class="absolute right-[-28px] z-10 ">
                                 <img class="img-move" src="/assets/reredol.png" alt="">
                             </div>
@@ -827,7 +835,8 @@
                             egestas</p>
                     </div>
                     <p class=" text-[#64748B]  text-sm font-semibold  mb-[24px]  text-center">Dec 24, 2023</p>
-                    <div class="text-[#64748B]  text-sm font-normal  mb-[24px] leading-[20px]">
+                    <div class="text-[#27303e] font-normal
+                    text-sm font-normal  mb-[24px] leading-[20px]">
                         <p>Quam proin consectetur parturient posuere tristique et fames bibendum etiam. Mus proin in
                             eget facilisis varius sit in. Diam adipiscing cras malesuada pellentesque nulla. Magna
                             consectetur aliquet egestas ultrices nulla. Vitae amet cursus risus amet augue interdum
@@ -862,12 +871,15 @@
     <footer class="mb-[120px]">
         <div>
             <div class="mb-[16px] flex  gap-[10px] justify-center ">
-                <a href="#">Home</a>
-                <a href="#">User Settings</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#" class="text-[#64748B] text-[16px] font-normal">Home</a>
+                <div class="w-[1px] h-[24px] bg-[#CBD5E1]"></div>
+                <a href="#" class=" text-[#64748B] text-[16px] font-normal">User Settings</a>
+                <div class="w-[1px] h-[24px] bg-[#CBD5E1]"></div>
+                <a href="#" class=" text-[#64748B] text-[16px] font-normal">Terms of Service</a>
+                <div class="w-[1px] h-[24px] bg-[#CBD5E1]"></div>
+                <a href="#" class=" text-[#64748B] text-[16px] font-normal">Privacy Policy</a>
             </div>
-            <p class="text-[#4338CA] text-base  text-center  ">Copyright © 2024. All rights reserved.</p>
+            <p class="text-[#4338CA] text-base  text-center font-semibold ">Copyright © 2024. All rights reserved.</p>
 
         </div>
     </footer>
